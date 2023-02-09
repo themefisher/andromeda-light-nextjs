@@ -12,7 +12,6 @@ const Header = () => {
   const { main } = menu;
 
   // states declaration
-  const [mounted, setMounted] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [sticky, setSticky] = useState(false);
   const headerRef = useRef(null);
@@ -38,9 +37,7 @@ const Header = () => {
   }, []);
 
   // logo source
-  const { logo, logo_darkmode } = config.site;
-  const { theme, resolvedTheme } = useTheme();
-  useEffect(() => setMounted(true), []);
+  const { logo } = config.site;
 
   return (
     <>
@@ -54,13 +51,7 @@ const Header = () => {
         <nav className="navbar container-xl">
           {/* logo */}
           <div className="order-0">
-            <Logo
-              src={
-                mounted && (theme === "dark" || resolvedTheme === "dark")
-                  ? logo_darkmode
-                  : logo
-              }
-            />
+            <Logo src={logo} />
           </div>
 
           <ul
