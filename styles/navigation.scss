@@ -36,6 +36,10 @@
 
 .nav-link {
   @apply p-3 text-[1rem] font-medium text-dark transition hover:text-primary lg:py-4 xl:px-3;
+
+  &.active {
+    @apply text-primary;
+  }
 }
 
 .nav-dropdown {
@@ -43,7 +47,7 @@
 }
 
 .nav-dropdown-list {
-  @apply z-10 rounded-lg bg-white p-4;
+  @apply z-10 rounded-lg bg-white px-2.5 w-[220px] lg:shadow-sm;
 }
 
 .nav-dropdown-item {
@@ -51,7 +55,11 @@
 }
 
 .nav-dropdown-link {
-  @apply min-w-[150px] py-1 text-[16px] font-medium text-dark transition hover:text-primary whitespace-nowrap hover:bg-[#ffece4] px-4 rounded-lg;
+  @apply min-w-[150px] py-2.5 text-sm font-medium text-dark transition lg:hover:text-primary whitespace-nowrap lg:hover:bg-[#ffece4] px-4 rounded-lg;
+  
+  &.active {
+    @apply lg:bg-[#ffece4] text-primary;
+  }
 }
 
 // search style

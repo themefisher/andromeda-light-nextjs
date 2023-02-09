@@ -3,6 +3,7 @@ import config from "@config/config.json";
 import menu from "@config/menu.json";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useEffect, useRef, useState } from "react";
 import { CgClose } from "react-icons/cg";
 
@@ -16,6 +17,8 @@ const Header = () => {
   const [sticky, setSticky] = useState(false);
   const headerRef = useRef(null);
   const [direction, setDirection] = useState(null);
+
+  const { asPath } = useRouter();
 
   //sticky header
   useEffect(() => {
@@ -62,7 +65,7 @@ const Header = () => {
 
           <ul
             id="nav-menu"
-            className={`navbar-nav order-2 w-full justify-center md:w-auto md:space-x-2 lg:flex lg:order-1 ${
+            className={`navbar-nav order-2 w-full justify-center md:w-auto md:space-x-2 lg:order-1 lg:flex ${
               !showMenu && "hidden"
             }`}
           >
@@ -76,12 +79,14 @@ const Header = () => {
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg>
                     </span>
-                    <ul className="nav-dropdown-list hidden border border-border-secondary group-hover:block lg:invisible lg:absolute lg:left-1/2 lg:block lg:-translate-x-1/2 lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+                    <ul className="nav-dropdown-list hidden max-h-0 w-full overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[106px] group-hover:py-2 lg:invisible lg:absolute lg:left-1/2 lg:block lg:w-auto lg:-translate-x-1/2 lg:group-hover:visible lg:group-hover:opacity-100">
                       {menu.children.map((child, i) => (
                         <li className="nav-dropdown-item" key={`children-${i}`}>
                           <Link
                             href={child.url}
-                            className="nav-dropdown-link block"
+                            className={`nav-dropdown-link block transition-all ${
+                              asPath === child.url && "active"
+                            }`}
                           >
                             {child.name}
                           </Link>
@@ -91,7 +96,12 @@ const Header = () => {
                   </li>
                 ) : (
                   <li className="nav-item">
-                    <Link href={menu.url} className="nav-link block">
+                    <Link
+                      href={menu.url}
+                      className={`nav-link block ${
+                        asPath === menu.url && "active"
+                      }`}
+                    >
                       {menu.name}
                     </Link>
                   </li>
