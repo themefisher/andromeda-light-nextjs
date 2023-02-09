@@ -8,8 +8,8 @@ function Terms({ data }) {
   const { mdxContent } = data;
   return (
     <div className="section pt-0">
+      <Banner title={title} />
       <div className="container">
-        <Banner title={title} />
         <div className="row mt-16 justify-center">
           <div className="lg:col-10">
             <p className="font-medium text-primary">Last-edit: {last_edit}</p>

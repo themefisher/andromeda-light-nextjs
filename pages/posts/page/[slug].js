@@ -40,8 +40,8 @@ const BlogPagination = ({
   return (
     <Base title={title}>
       <section className="section pt-0">
+        <Banner title={title} />
         <div className="container">
-          <Banner title={title} />
           <div
             className="row justify-center pt-20 pb-16 opacity-0"
             ref={postsRef}

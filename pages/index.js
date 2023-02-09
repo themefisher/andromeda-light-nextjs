@@ -100,124 +100,126 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
   return (
     <Base>
       <section className="section banner pt-0">
-        <div className="container">
-          <div className="row overflow-hidden rounded-2xl">
-            <div className="col-12">
-              <div className="row relative justify-center pb-10">
-                <div className="banner-content col-10 pt-20 pb-10 text-center">
-                  {markdownify(
-                    banner.title,
-                    "h1",
-                    "mb-8 banner-title opacity-0"
-                  )}
-                  <div className="banner-btn opacity-0">
-                    <Link className="btn btn-primary" href={banner.link.href}>
-                      {banner.link.label}
-                    </Link>
+        <div className="container-xl">
+          <div className="relative">
+            <div className="bg-theme banner-bg col-12 absolute top-0 left-0">
+              <Circle
+                className="circle left-[10%] top-12"
+                width={32}
+                height={32}
+                fill={false}
+              />
+              <Circle
+                className="circle left-[2.5%] top-[29%]"
+                width={85}
+                height={85}
+              />
+              <Circle
+                className="circle left-[22%] bottom-[48%]"
+                width={20}
+                height={20}
+              />
+              <Circle
+                className="circle left-[15%] bottom-[37%]"
+                width={47}
+                height={47}
+                fill={false}
+              />
+              <Circle
+                className="circle left-[6%] bottom-[13%]"
+                width={62}
+                height={62}
+                fill={false}
+              />
+              <Circle
+                className="circle right-[12%] top-[15%]"
+                width={20}
+                height={20}
+              />
+              <Circle
+                className="circle right-[2%] top-[30%]"
+                width={73}
+                height={73}
+                fill={false}
+              />
+              <Circle
+                className="circle right-[19%] top-[48%]"
+                width={37}
+                height={37}
+                fill={false}
+              />
+              <Circle
+                className="circle right-[33%] top-[54%]"
+                width={20}
+                height={20}
+              />
+              <Circle
+                className="circle right-[3%] bottom-[20%]"
+                width={65}
+                height={65}
+              />
+            </div>
+            <div className="row overflow-hidden rounded-2xl">
+              <div className="col-12">
+                <div className="row relative justify-center pb-10">
+                  <div className="banner-content col-10 pt-20 pb-10 text-center">
+                    {markdownify(
+                      banner.title,
+                      "h1",
+                      "mb-8 banner-title opacity-0"
+                    )}
+                    <div className="banner-btn opacity-0">
+                      <Link className="btn btn-primary" href={banner.link.href}>
+                        {banner.link.label}
+                      </Link>
+                    </div>
                   </div>
-                </div>
-                <div className="col-10">
-                  <ImageFallback
-                    className="banner-img opacity-0"
-                    src={banner.image}
-                    width={1170}
-                    height={666}
-                    priority={true}
-                    alt=""
-                  />
-                </div>
-                <div className="bg-theme banner-bg col-12 absolute top-0 left-0">
-                  <Circle
-                    className="circle left-[10%] top-12"
-                    width={32}
-                    height={32}
-                    fill={false}
-                  />
-                  <Circle
-                    className="circle left-[9%] top-[29%]"
-                    width={85}
-                    height={85}
-                  />
-                  <Circle
-                    className="circle left-[22%] bottom-[47%]"
-                    width={20}
-                    height={20}
-                  />
-                  <Circle
-                    className="circle left-[15%] bottom-[35%]"
-                    width={47}
-                    height={47}
-                    fill={false}
-                  />
-                  <Circle
-                    className="circle left-[6%] bottom-[18%]"
-                    width={62}
-                    height={62}
-                    fill={false}
-                  />
-                  <Circle
-                    className="circle right-[12%] top-[10px]"
-                    width={20}
-                    height={20}
-                  />
-                  <Circle
-                    className="circle right-[2%] top-[30%]"
-                    width={73}
-                    height={73}
-                    fill={false}
-                  />
-                  <Circle
-                    className="circle right-[19%] top-[45%]"
-                    width={37}
-                    height={37}
-                    fill={false}
-                  />
-                  <Circle
-                    className="circle right-[33%] top-[52%]"
-                    width={20}
-                    height={20}
-                  />
-                  <Circle
-                    className="circle right-[5%] bottom-[18%]"
-                    width={65}
-                    height={65}
-                  />
+                  <div className="col-10">
+                    <ImageFallback
+                      className="banner-img opacity-0"
+                      src={banner.image}
+                      width={1170}
+                      height={666}
+                      priority={true}
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="row border-y border-border py-5">
-            <div className="animate from-right col-12">
-              <Swiper
-                loop={true}
-                slidesPerView={3}
-                breakpoints={{
-                  992: {
-                    slidesPerView: 5,
-                  },
-                }}
-                spaceBetween={20}
-                modules={[Autoplay]}
-                autoplay={{ delay: 3000 }}
-              >
-                {brands.map((brand, index) => (
-                  <SwiperSlide
-                    className=" h-20 cursor-pointer py-6 px-6 grayscale  transition hover:grayscale-0 lg:px-10"
-                    key={"brand-" + index}
-                  >
-                    <div className="relative h-full">
-                      <ImageFallback
-                        className="object-contain"
-                        src={brand}
-                        sizes="100vw"
-                        alt=""
-                        fill={true}
-                        priority={true}
-                      />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+            <div className="row border-y border-border py-5">
+              <div className="animate from-right col-12">
+                <Swiper
+                  loop={true}
+                  slidesPerView={3}
+                  breakpoints={{
+                    992: {
+                      slidesPerView: 5,
+                    },
+                  }}
+                  spaceBetween={20}
+                  modules={[Autoplay]}
+                  autoplay={{ delay: 3000 }}
+                >
+                  {brands.map((brand, index) => (
+                    <SwiperSlide
+                      className=" h-20 cursor-pointer py-6 px-6 grayscale  transition hover:grayscale-0 lg:px-10"
+                      key={"brand-" + index}
+                    >
+                      <div className="relative h-full">
+                        <ImageFallback
+                          className="object-contain"
+                          src={brand}
+                          sizes="100vw"
+                          alt=""
+                          fill={true}
+                          priority={true}
+                        />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
             </div>
           </div>
         </div>
@@ -275,7 +277,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
 
       {/* Short Into */}
       <section className="section pt-0">
-        <div className="container">
+        <div className="container-xl">
           <div className="relative px-4 py-[70px]">
             <div className="text-center">
               <div className="animate">
@@ -294,7 +296,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                 height={32}
                 fill={false}
               />
-              <Circle className="left-[9%] top-[29%]" width={85} height={85} />
+              <Circle className="left-[3%] top-[30%]" width={85} height={85} />
               <Circle
                 className="left-[22%] bottom-[52%]"
                 width={20}
@@ -307,7 +309,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                 fill={false}
               />
               <Circle
-                className="left-[6%] bottom-[8%]"
+                className="left-[6%] bottom-[6%]"
                 width={62}
                 height={62}
                 fill={false}
@@ -347,8 +349,8 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
       {/* Special Features */}
       <section className="section">
         <div className="container">
-          <div className="row items-center">
-            <div className="animate lg:col-7 lg:order-2">
+          <div className="row items-center justify-center">
+            <div className="animate lg:col-6 lg:order-2">
               <ImageFallback
                 className="mx-auto"
                 src={speciality.primary.image}
@@ -368,7 +370,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
             </div>
           </div>
           <div className="row items-center">
-            <div className="animate lg:col-7">
+            <div className="animate lg:col-6">
               <ImageFallback
                 className="mx-auto"
                 src={speciality.secondary.image}
@@ -399,73 +401,78 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
             {markdownify(testimonial.description, "p", "mt-10")}
           </div>
           <div className="animate row mt-10 items-center justify-center">
-            <div className="hidden lg:block lg:col-3 xl:col-4">
-              <ImageFallback
-                src="/images/testimonials-01.png"
-                width={455}
-                height={522}
-                alt="testimonials"
-              />
-            </div>
-            <div className=" md:col-7 lg:col-6 xl:col-4">
-              {
-                <Swiper
-                  modules={[Pagination]}
-                  pagination={{
-                    el: testimonialPaginationRef.current,
-                    type: "bullets",
-                    dynamicBullets: true,
-                    clickable: true,
-                  }}
-                  onBeforeInit={(swiper) => {
-                    swiper.params.pagination.el =
-                      testimonialPaginationRef.current;
-                  }}
-                  className="testimonial-slider mx-auto max-w-[420px] lg:max-w-[480px]"
-                >
-                  {testimonial.list.map((item, index) => (
-                    <SwiperSlide
-                      className="text-center"
-                      key={"testimonial-" + index}
+            <div className="xl:col-11">
+              <div className="row items-center justify-center">
+                <div className="hidden lg:col-3 xl:col-4 lg:block">
+                  <ImageFallback
+                    src="/images/testimonials-01.png"
+                    width={455}
+                    height={522}
+                    alt="testimonials"
+                  />
+                </div>
+                <div className="md:col-7 lg:col-6 xl:col-4">
+                  {
+                    <Swiper
+                      modules={[Pagination, Autoplay]}
+                      pagination={{
+                        el: testimonialPaginationRef.current,
+                        type: "bullets",
+                        dynamicBullets: true,
+                        clickable: true,
+                      }}
+                      autoplay={{ delay: 3000 }}
+                      onBeforeInit={(swiper) => {
+                        swiper.params.pagination.el =
+                          testimonialPaginationRef.current;
+                      }}
+                      className="testimonial-slider mx-auto max-w-[420px] cursor-pointer lg:max-w-[480px]"
                     >
-                      <div className="py-6 px-8 sm:py-12 md:px-10 lg:px-20 xl:px-12">
-                        <TbQuote className="mx-auto rotate-180 text-5xl text-body sm:text-6xl lg:text-8xl" />
-                        {markdownify(
-                          item.content,
-                          "p",
-                          "text-[17px] lg:text-lg text-body mt-4 md:mt-5 xl:mt-8"
-                        )}
-                        <div className="mt-7 inline-block rounded-md bg-body p-7 shadow-[0_10px_50px_rgba(0,0,0,.08)] md:mt-5 lg:mt-8 xl:mt-5">
-                          <ImageFallback
-                            className="mx-auto rounded-full"
-                            src={item.avatar}
-                            width={90}
-                            height={90}
-                            priority={true}
-                            alt={item.author}
-                          />
-                          <h6>{item.author}</h6>
-                          <p>{item.profession}</p>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              }
-              <div className="relative h-8">
-                <div
-                  className="pagination absolute left-1/2 -translate-x-1/2"
-                  ref={testimonialPaginationRef}
-                ></div>
+                      {testimonial.list.map((item, index) => (
+                        <SwiperSlide
+                          className="text-center"
+                          key={"testimonial-" + index}
+                        >
+                          <div className="py-6 px-8 sm:py-12 md:px-10 lg:px-20 xl:px-12">
+                            <TbQuote className="mx-auto rotate-180 text-5xl text-body sm:text-6xl lg:text-8xl" />
+                            {markdownify(
+                              item.content,
+                              "p",
+                              "text-[17px] lg:text-lg text-body mt-4 md:mt-5 xl:mt-8"
+                            )}
+                            <div className="mt-7 inline-block rounded-md bg-body p-7 shadow-[0_10px_50px_rgba(0,0,0,.08)] md:mt-5 lg:mt-8 xl:mt-5">
+                              <ImageFallback
+                                className="mx-auto rounded-full"
+                                src={item.avatar}
+                                width={90}
+                                height={90}
+                                priority={true}
+                                alt={item.author}
+                              />
+                              <h6>{item.author}</h6>
+                              <p>{item.profession}</p>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
+                  }
+                  <div className="relative h-8">
+                    <div
+                      className="pagination absolute left-1/2 -translate-x-1/2"
+                      ref={testimonialPaginationRef}
+                    ></div>
+                  </div>
+                </div>
+                <div className="hidden lg:col-3 xl:col-4 lg:block">
+                  <ImageFallback
+                    src="/images/testimonials-02.png"
+                    width={455}
+                    height={522}
+                    alt="testimonials"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="hidden lg:block lg:col-3 xl:col-4">
-              <ImageFallback
-                src="/images/testimonials-02.png"
-                width={455}
-                height={522}
-                alt="testimonials"
-              />
             </div>
           </div>
         </div>

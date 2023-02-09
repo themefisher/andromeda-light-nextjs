@@ -8,8 +8,8 @@ const Contact = ({ data }) => {
 
   return (
     <section className="section">
+      <Banner title={title} />
       <div className="container">
-        <Banner title={title} />
         <div className="section row items-center justify-center">
           <div className="animate lg:col-5">
             <ImageFallback

@@ -11,7 +11,7 @@ function Cta() {
 
   return (
     <section className="cta section pt-0">
-      <div className="container">
+      <div className="container-xl">
         <div className="section relative px-4 text-center">
           <div className="animate">
             {markdownify(title, "h2", "section-title")}

@@ -51,7 +51,7 @@ const Header = () => {
         }`}
         ref={headerRef}
       >
-        <nav className="navbar container">
+        <nav className="navbar container-xl">
           {/* logo */}
           <div className="order-0">
             <Logo

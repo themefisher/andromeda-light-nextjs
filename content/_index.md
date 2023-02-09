@@ -72,7 +72,27 @@ testimonial:
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
   list:
     - author: David Cameron
-      avatar: /images/user-img/07.jpg
+      avatar: /images/user-img/01.jpg
+      profession: CEO, Nexuspay
+      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+    - author: David Cameron
+      avatar: /images/user-img/02.jpg
+      profession: CEO, Nexuspay
+      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+    - author: David Cameron
+      avatar: /images/user-img/03.jpg
+      profession: CEO, Nexuspay
+      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+    - author: David Cameron
+      avatar: /images/user-img/04.png
+      profession: CEO, Nexuspay
+      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+    - author: David Cameron
+      avatar: /images/user-img/05.jpg
+      profession: CEO, Nexuspay
+      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+    - author: David Cameron
+      avatar: /images/user-img/06.jpg
       profession: CEO, Nexuspay
       content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
     - author: David Cameron
@@ -80,11 +100,7 @@ testimonial:
       profession: CEO, Nexuspay
       content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
     - author: David Cameron
-      avatar: /images/user-img/07.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/07.jpg
+      avatar: /images/user-img/08.jpg
       profession: CEO, Nexuspay
       content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
 
