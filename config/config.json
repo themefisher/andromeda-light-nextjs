@@ -1,0 +1,47 @@
+{
+  "site": {
+    "title": "Andromeda Light Nextjs",
+    "base_url": "/",
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.svg",
+    "logo_darkmode": "/images/logo-dark.svg",
+    "logo_width": "240",
+    "logo_height": "34",
+    "logo_text": "Andromeda"
+  },
+
+  "settings": {
+    "theme_switcher": true,
+    "default_theme": "system",
+    "pagination": 6,
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+
+  "params": {
+    "tag_manager_id": "",
+    "footer_content": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
+    "copyright": "Designed By [Themefisher](https:www.themefisher.com) & Developed By [Statichunt](https://www.statichunt.com)"
+  },
+
+  "metadata": {
+    "meta_author": "Themefisher",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Andromeda-light Nextjs Blog Template"
+  },
+  "call_to_action": {
+    "title": "Get Andromeda-Premium Now",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.",
+    "link": {
+      "href": "#",
+      "label": "Download The Theme"
+    },
+    "enable": true
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template",
+    "settings": {}
+  }
+}
