@@ -4,11 +4,10 @@ import Base from "@layouts/Baseof";
 import Banner from "@layouts/components/Banner";
 import Cta from "@layouts/components/Cta";
 import { getListPage, getSinglePage } from "@lib/contentParser";
-import { markdownify } from "@lib/utils/textConverter";
+import { gsap } from "@lib/gsap";
 import Post from "@partials/Post";
 import { useEffect, useRef } from "react";
 const { blog_folder } = config.settings;
-import { gsap } from "@lib/gsap";
 
 // blog pagination
 const BlogPagination = ({
@@ -94,14 +93,12 @@ export const getStaticProps = async ({ params }) => {
   const currentPage = parseInt((params && params.slug) || 1);
   const { pagination } = config.settings;
   const posts = getSinglePage(`content/${blog_folder}`);
-  const authors = getSinglePage("content/authors");
   const postIndex = await getListPage(`content/${blog_folder}/_index.md`);
 
   return {
     props: {
       pagination: pagination,
       posts: posts,
-      authors: authors,
       currentPage: currentPage,
       postIndex: postIndex,
     },

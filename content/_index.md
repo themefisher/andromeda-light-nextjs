@@ -24,7 +24,7 @@ features:
   title: Elements To </br> Get You Started
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
   list:
-    - icon: 'lock'
+    - icon: 'lock' # feather icon: https://feathericons.com/
       title: Updated Security
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
     - icon: 'wind'

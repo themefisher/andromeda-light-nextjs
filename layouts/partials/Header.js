@@ -98,16 +98,26 @@ const Header = () => {
                 )}
               </React.Fragment>
             ))}
-            <li className="nav-item lg:hidden">
-              <Link className="btn btn-primary hidden lg:flex" href="#">
-                Buy Premium
-              </Link>
-            </li>
+            {config.nav_button.enable && (
+              <li className="nav-item lg:hidden">
+                <Link
+                  className="btn btn-primary hidden lg:flex"
+                  href={config.nav_button.link}
+                >
+                  {config.nav_button.label}
+                </Link>
+              </li>
+            )}
           </ul>
           <div className="order-1 ml-auto flex items-center md:ml-0">
-            <Link className="btn btn-primary hidden lg:flex" href="#">
-              Buy Premium
-            </Link>
+            {config.nav_button.enable && (
+              <Link
+                className="btn btn-primary hidden lg:flex"
+                href={config.nav_button.link}
+              >
+                {config.nav_button.label}
+              </Link>
+            )}
 
             {/* navbar toggler */}
             {showMenu ? (

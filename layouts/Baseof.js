@@ -1,10 +1,10 @@
 import config from "@config/config.json";
+import { gsap } from "@lib/gsap";
 import { plainify } from "@lib/utils/textConverter";
 import Footer from "@partials/Footer";
 import Header from "@partials/Header";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { gsap } from "@lib/gsap";
 import { useEffect, useRef } from "react";
 
 const Base = ({

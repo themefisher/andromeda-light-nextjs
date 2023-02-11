@@ -1,5 +1,3 @@
-import React from "react";
-
 function Circle({ className, width, height, fill = true, ...props }) {
   return (
     <div

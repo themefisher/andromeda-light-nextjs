@@ -1,10 +1,10 @@
+import { gsap } from "@lib/gsap";
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import Circle from "./Circle";
 import ImageFallback from "./ImageFallback";
-import { gsap } from "@lib/gsap";
-import { useRouter } from "next/router";
+
 const Banner = ({ title }) => {
   const banner = useRef(null);
 

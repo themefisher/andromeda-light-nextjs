@@ -1,5 +1,5 @@
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
-import React, { useState } from "react";
+import { useState } from "react";
 import { LiteYoutubeEmbed } from "../../node_modules/react-lite-yt-embed/dist/index";
 import ImageFallback from "./ImageFallback";
 

@@ -1,3 +1,4 @@
+import config from "@config/config.json";
 import Banner from "./components/Banner";
 import ImageFallback from "./components/ImageFallback";
 
@@ -20,7 +21,11 @@ const Contact = ({ data }) => {
             />
           </div>
           <div className="animate lg:col-5">
-            <form className="contact-form rounded-xl p-6 shadow-[0_4px_25px_rgba(0,0,0,0.05)]">
+            <form
+              method="POST"
+              action={config.params.contact_form_action}
+              className="contact-form rounded-xl p-6 shadow-[0_4px_25px_rgba(0,0,0,0.05)]"
+            >
               <h2 className="h4 mb-6">Send A Message</h2>
               <div className="mb-6">
                 <label

@@ -1,23 +1,17 @@
+import config from "@config/config.json";
 import Base from "@layouts/Baseof";
 import dateFormat from "@lib/utils/dateFormat";
 import readingTime from "@lib/utils/readingTime";
 import { markdownify } from "@lib/utils/textConverter";
 import shortcodes from "@shortcodes/all";
+import { DiscussionEmbed } from "disqus-react";
 import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import Cta from "./components/Cta";
 import ImageFallback from "./components/ImageFallback";
 import Post from "./partials/Post";
-import { DiscussionEmbed } from "disqus-react";
-import config from "@config/config.json";
 
-const PostSingle = ({
-  frontmatter,
-  content,
-  mdxContent,
-  slug,
-  recentPosts,
-}) => {
+const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
   let { description, title, date, image, author } = frontmatter;
   description = description ? description : content.slice(0, 120);
 

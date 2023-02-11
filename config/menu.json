@@ -31,7 +31,6 @@
       "name": "Contact",
       "url": "/contact"
     }
-    
   ],
   "footer": [
     {
@@ -43,12 +42,8 @@
       "url": "/blog"
     },
     {
-      "name": "Blog Details",
-      "url": "#"
-    },
-    {
       "name": "Terms & Conditions",
-      "url": "/terms"
+      "url": "/terms-policy"
     }
   ]
 }

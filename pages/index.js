@@ -1,18 +1,17 @@
-import config from "@config/config.json";
 import Base from "@layouts/Baseof";
 import Circle from "@layouts/components/Circle";
-import ImageFallback from "@layouts/components/ImageFallback";
-import { getListPage } from "@lib/contentParser";
-import { markdownify } from "@lib/utils/textConverter";
-import Link from "next/link";
-import { Pagination, Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { useEffect, useRef } from "react";
-import FeatherIcon from "feather-icons-react/build/FeatherIcon";
-import { TbQuote } from "react-icons/tb";
 import Cta from "@layouts/components/Cta";
-import { gsap } from "@lib/gsap";
+import ImageFallback from "@layouts/components/ImageFallback";
 import VideoPopup from "@layouts/components/VideoPopup";
+import { getListPage } from "@lib/contentParser";
+import { gsap } from "@lib/gsap";
+import { markdownify } from "@lib/utils/textConverter";
+import FeatherIcon from "feather-icons-react/build/FeatherIcon";
+import Link from "next/link";
+import { useEffect, useRef } from "react";
+import { TbQuote } from "react-icons/tb";
+import { Autoplay, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
   const paginationRef = useRef(null);

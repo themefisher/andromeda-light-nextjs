@@ -1,11 +1,11 @@
 import { markdownify } from "@lib/utils/textConverter";
+import { Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Banner from "./components/Banner";
+import Circle from "./components/Circle";
 import Cta from "./components/Cta";
 import ImageFallback from "./components/ImageFallback";
 import VideoPopup from "./components/VideoPopup";
-import Circle from "./components/Circle";
-import { SwiperSlide, Swiper } from "swiper/react";
-import { Autoplay } from "swiper";
 
 const About = ({ data }) => {
   const { frontmatter } = data;

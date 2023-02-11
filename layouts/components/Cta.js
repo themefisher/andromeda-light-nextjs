@@ -1,12 +1,11 @@
-import Link from "next/link";
-import React from "react";
-import ImageFallback from "./ImageFallback";
 import config from "@config/config.json";
 import { markdownify } from "@lib/utils/textConverter";
+import Link from "next/link";
 import Circle from "./Circle";
+import ImageFallback from "./ImageFallback";
 
 function Cta() {
-  const { title, content, link, enable } = config.call_to_action;
+  const { title, content, button, enable } = config.call_to_action;
   if (!enable) return;
 
   return (
@@ -16,8 +15,8 @@ function Cta() {
           <div className="animate">
             {markdownify(title, "h2", "section-title")}
             {markdownify(content, "p", "mt-10")}
-            <Link href={link.href} className="btn btn-primary mt-10">
-              {link.label}
+            <Link href={button.link} className="btn btn-primary mt-10">
+              {button.label}
             </Link>
           </div>
           <div className="bg-theme animated-bg absolute top-0 left-0 w-full after:hidden">
@@ -25,7 +24,7 @@ function Cta() {
               src="/images/wave.svg"
               fill={true}
               sizes="100vw"
-              alt=""
+              alt="bg wave"
             />
             <Circle
               className="left-[10%] top-12"
