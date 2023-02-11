@@ -1,6 +1,6 @@
 <h1 align=center>Andromeda Light Nextjs</h1>
 <p align=center>Andromeda Light is a SAAS template for Nextjs</p>
-<h2 align="center"> <a target="_blank" href="https://booworm-light-nextjs.vercel.app/" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fandromeda-light-nextjs.vercel.app%2F&form_factor=desktop">Page Speed (100%)</a>
+<h2 align="center"> <a target="_blank" href="https://andromeda-light-nextjs.vercel.app/" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fandromeda-light-nextjs.vercel.app%2F&form_factor=desktop">Page Speed (100%)</a>
 </h2>
 
 <p align=center>
@@ -19,12 +19,6 @@
 
 ![andromeda-light](https://demo.gethugothemes.com/thumbnails/andromeda-light.png)
 
-👉🏻[View Live Preview](https://andromeda-light-nextjs.vercel.app/)
-
-<!-- download -->
-## Download
-
-Download this template from [Github](https://github.com/themefisher/andromeda-light-nextjs/archive/main.zip)
 
 ## Key Features
 
