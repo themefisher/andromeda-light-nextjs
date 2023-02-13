@@ -22,14 +22,21 @@
 
 ## Key Features
 
-- Multi-Author support
 - Google Page Speed score 100! (Desktop)
+- Tailwind CSS
+- SEO-Friendly
+- 100% Responsive Design
 - Supports Contact Form
-- Search Functionality
+- Google analytics support
+- Multi-Author
 - Semantic HTML Document Structure
 - Custom Logo Support
 - Includes All SCSS Files
 - Image Optimized With Next/image
+- Color and fonts variable in the config file
+- Disqus Comment Support
+- Related Posts Suggestion
+- MDX Support with many built-in custom components
 
 <!-- installation -->
 ## Installation
