@@ -28,13 +28,13 @@
 - 100% Responsive Design
 - Supports Contact Form
 - Google analytics support
+- Disqus Comment Support
+- Custom Logo Support
 - Multi-Author
 - Semantic HTML Document Structure
-- Custom Logo Support
 - Includes All SCSS Files
 - Image Optimized With Next/image
 - Color and fonts variable in the config file
-- Disqus Comment Support
 - Related Posts Suggestion
 - MDX Support with many built-in custom components
 
