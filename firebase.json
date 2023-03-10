@@ -1,0 +1,13 @@
+{
+    "hosting": {
+        "public": "out",
+        "ignore": [
+            "firebase.json",
+            "yarn.json",
+            "package.json",
+            "renovate.json",
+            "**/.*",
+            "**/node_modules/**"
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+name: Deploy to Prd
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy_prd_website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out code
+        uses: actions/checkout@v3
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+          cache-dependency-path: 'yarn.lock'
+      - run: npm install -g yarn
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - name: deploy to firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          projectId: "${{ secrets.PROJECT_ID }}"
+          channelId: live
