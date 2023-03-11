@@ -1,4 +1,0 @@
-AuthUserFile: ./.htpasswd
-AuthName: "Members only"
-AuthType Basic
-Require valid-user
