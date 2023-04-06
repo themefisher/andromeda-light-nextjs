@@ -15,7 +15,7 @@
     "gray-matter": "^4.0.3",
     "gsap": "^3.11.4",
     "marked": "^4.2.12",
-    "next": "13.1.6",
+    "next": "13.3.0",
     "next-mdx-remote": "^4.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
