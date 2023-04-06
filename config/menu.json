@@ -5,45 +5,26 @@
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
-    },
-    {
-      "name": "Blog",
-      "url": "/posts"
-    },
-    {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Terms & Conditions",
-          "url": "/terms-policy"
-        }
-      ]
-    },
-    {
-      "name": "Contact",
+      "name": "Kontakt",
       "url": "/contact"
     }
   ],
   "footer": [
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Home",
+      "url": "/"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "Kontakt",
+      "url": "/contact"
     },
     {
-      "name": "Terms & Conditions",
-      "url": "/terms-policy"
+      "name": "Impressum",
+      "url": "/impressum"
+    },
+    {
+      "name": "Datenschutzerklärung",
+      "url": "/gdpr"
     }
   ]
 }

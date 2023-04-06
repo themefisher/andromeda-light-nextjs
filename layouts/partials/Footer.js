@@ -7,8 +7,9 @@ import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
 
 const Footer = () => {
-  const { copyright, footer_content } = config.params;
-  const { email, phone, location } = config.contact_info;
+  const { title } = config.site;
+  const { footer_content } = config.params;
+  const { email, name, address, bank, iban } = config.contact_info;
   return (
     <footer className="">
       <div className="container">
@@ -18,16 +19,14 @@ const Footer = () => {
             {markdownify(footer_content, "p", "mt-3")}
           </div>
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
-            <h3 className="h5">Socials</h3>
+            <h3 className="h5">Social Media</h3>
             <div className="mt-5">
               {email && <Link href={`mailto:${email}`}>{email}</Link>}
-              {/* social icons */}
               <Social source={social} className="social-icons mt-5" />
             </div>
           </div>
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
             <h3 className="h5">Quick Links</h3>
-            {/* footer menu */}
             <ul className="mt-5 leading-10">
               {menu.footer.map((menu) => (
                 <li key={menu.name}>
@@ -42,20 +41,24 @@ const Footer = () => {
             </ul>
           </div>
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
-            <h3 className="h5">Location & Contact</h3>
+            <h3 className="h5">Kontaktdaten</h3>
             <ul className="mt-5 leading-10">
-              <li>{markdownify(location)}</li>
-              {phone && (
-                <li>
-                  <Link href={`tel:${phone}`}>{phone}</Link>
-                </li>
-              )}
+              <li><strong>{markdownify(name)}</strong></li>
+              <li>{markdownify(address)}</li>
+              <li><strong>Spendenkonto:</strong></li>
+              <li>{markdownify(bank)}</li>
+              <li><strong>IBAN:</strong> {markdownify(iban)}</li>
             </ul>
           </div>
         </div>
-        {/* copyright */}
         <div className=" py-6 text-center">
-          {markdownify(copyright, "p", "footer-copy-write")}
+          <p className="footer-copy-write">
+            © {new Date().getFullYear()} {markdownify(title)}.
+            {" "} //  {" "}
+            <Link href="/impressum" className=" hover:text-primary hover:underline">Impressum</Link>
+            {" "} // {" "}
+            <Link href="/gdpr" className=" hover:text-primary hover:underline">Datenschutzerklärung</Link>
+          </p>
         </div>
       </div>
     </footer>

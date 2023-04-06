@@ -96,8 +96,8 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
     return () => ctx.revert();
   }, []);
 
-  return (
-    <Base>
+  const renderBanner = () => {
+    return (
       <section className="section banner pt-0">
         <div className="container-xl">
           <div className="relative">
@@ -193,7 +193,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                   slidesPerView={3}
                   breakpoints={{
                     992: {
-                      slidesPerView: 5,
+                      slidesPerView: 4,
                     },
                   }}
                   spaceBetween={20}
@@ -202,7 +202,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                 >
                   {brands.map((brand, index) => (
                     <SwiperSlide
-                      className=" h-20 cursor-pointer py-6 px-6 grayscale  transition hover:grayscale-0 lg:px-10"
+                      className=" h-40 cursor-pointer py-6 px-6 grayscale  transition hover:grayscale-0 lg:px-10"
                       key={"brand-" + index}
                     >
                       <div className="relative h-full">
@@ -223,8 +223,11 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
           </div>
         </div>
       </section>
+    );
+  };
 
-      {/* Features */}
+  const renderFeatures = () => {
+    return (
       <section className="section">
         <div className="container text-center">
           <div className="animate">
@@ -273,8 +276,11 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
           </div>
         </div>
       </section>
+    );
+  };
 
-      {/* Short Into */}
+  const renderShortIntro = () => {
+    return (
       <section className="section pt-0">
         <div className="container-xl">
           <div className="relative px-4 py-[70px]">
@@ -344,11 +350,14 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
           </div>
         </div>
       </section>
+    );
+  };
 
-      {/* Special Features */}
+  const renderSpecialFeatures = () => {
+    return (
       <section className="section">
         <div className="container">
-          <div className="row items-center justify-center">
+          <div className="row items-center justify-center pb-14">
             <div className="animate lg:col-6 lg:order-2">
               <ImageFallback
                 className="mx-auto"
@@ -368,7 +377,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
               {markdownify(speciality.primary.description, "p", "mt-10")}
             </div>
           </div>
-          <div className="row items-center">
+          <div className="row items-center pt-14">
             <div className="animate lg:col-6">
               <ImageFallback
                 className="mx-auto"
@@ -390,8 +399,11 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
           </div>
         </div>
       </section>
+    );
+  };
 
-      {/* Testimonial */}
+  const renderTestimonial = () => {
+    return (
       <section className="section pt-0">
         <div className="container">
           <div className="animate text-center">
@@ -476,8 +488,16 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
           </div>
         </div>
       </section>
+    );
+  };
 
-      {/* Cta */}
+  return (
+    <Base>
+      {renderBanner()}
+      {renderFeatures()}
+      {/* renderShortIntro() */}
+      {renderSpecialFeatures()}
+      {/* renderTestimonial() */}
       <Cta />
     </Base>
   );

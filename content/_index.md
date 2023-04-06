@@ -1,107 +1,97 @@
 ---
 banner:
-  title: "Andromeda is the most intuitive </br> way to prototype Designs"
-  image: /images/banner-app.png
+  title: "Herzlich Willkommen beim Förderverein First Responder in der Gemeinde Berg e. V."
+  image: /images/welcome.jpeg
   link:
-    label: Get Premium Version
-    href: "#"
+    label: Jetzt Spenden via PayPal
+    href: "https://www.paypal.com/donate/?hosted_button_id=JEQAM8GA9SDPA"
 
 ##brands
 brands:
-  - /images/brands/01-colored.png
-  - /images/brands/02-colored.png
-  - /images/brands/03-colored.png
-  - /images/brands/04-colored.png
-  - /images/brands/05-colored.png
-  - /images/brands/06-colored.png
-  - /images/brands/04-colored.png
-  - /images/brands/05-colored.png
-  - /images/brands/06-colored.png
+  - /images/brands/ff-allmannshausen.png
+  - /images/brands/ff-bachhausen.png
+  - /images/brands/ff-berg.png
+  - /images/brands/ff-hoehenrain.png
+  - /images/brands/ff-kempfenhausen.png
+  - /images/brands/gemeinde-berg.png
 
 #features
 features:
-  sub_title: SPECIAL FEATURES
-  title: Elements To </br> Get You Started
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  sub_title: EIN GEMEINSCHAFTSPROJEKT ZUR
+  title: notfallmedizinische Erstversorgung <br> der Bürger:innen der Gemeinde Berg
+  description: Der Förderverein First Responder in der Gemeinde Berg e. V. setzt sich seit seiner Gründung im November 2003 mit all seinen Mitteln und Kräften für die notfallmedizinische Erstversorgung der BürgerInnen der Gemeinde Berg ein. Neben der First Responder Tätigkeit ist uns die Verbesserung der medizinischen Ausrüstung in unserer Gegend ein großes Anliegen. Dafür werden kontinuierlich neue Ausrüstungsgegenstände beschafft. 
   list:
-    - icon: 'lock' # feather icon: https://feathericons.com/
-      title: Updated Security
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: 'wind'
-      title: Magnetic Turning
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: 'shield'
-      title: Secured & up-to-date
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: 'link'
-      title: Instant Link Sharing
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: 'lock'
-      title: Updated Security
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: 'wind'
-      title: Magnetic Turning
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
+    - icon: 'activity' # see https://feathericons.com/
+      title: Notfallmedizin
+      content: Schnelle qualifizierte Hilfe bei Notfalleinsätzen im Gemeindegebiet Berg und der näheren Umgebung.
+    - icon: 'users'
+      title: Fort- und Weiterbildung
+      content: Kontinuierliche Fortbildung aller aktiven Fahrer:innen des First Responder durch Übungen und Vorträge von Ärzt:innen.
+    - icon: 'message-circle'
+      title: Öffentlichkeitsarbeit
+      content: Ansprechpartner für alle Bürger:innen in Belange der Ersten Hilfe und regelmäßige Vorträge sowie Hands-On Übungen.
+    - icon: 'tool'
+      title: Ausrüstung
+      content: Fachliche und finanzielle Unterstützung bei medizinischen Beschaffungen der Ausrüstung für das First Responder Projekt.
 
 #intro
 intro:
   title: Built Exclusively For You
   subtitle: SHORT INTRO VIDEO
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet.
   thumbnail: "/images/video-popup.jpg"
   video_id: dyZcRRWiuuw
 
 #speciality
 speciality:
   primary:
-    title: You Will Not Miss Your All Misunderstandings
-    subtitle: PRIMARY SPECIALITY
-    description: Protect your design vision and leave nothing up to interpretation with interaction recipes. Quickly share and access all your team members interactions by using libraries, ensuring consistency throughout the.
-    image: /images/features-01.png
+    title: Lebensrettende <br> Maßnahmen vor Ort
+    subtitle: UNSERE AUFGABEN
+    description: Die ortsansässigen Rettungshelfer:innen verkürzen durch die Nähe zum Einsatzort das <strong>therapiefreie Intervall</strong> vom Eintritt des Notfalls bis zum Eintreffen der Rettungskräfte. Die kurzen Wege zum Einsatzort ermöglichen eine Einsparung von bis zu 31 Minuten, sodass diese kritische Zeitspanne minimiert werden kann. Insbesondere bei lebensbedrohlichen Erkrankungen, wie beispielsweise Herz-/Kreislaufstillständen, kritischen Atemproblemen oder starken Blutungen zählt jede Sekunde!
+    image: /images/first_responder.jpeg
   secondary:
-    title: Say Hello To No-Code The Advance Creation
-    subtitle: SECONDARY SPECIALITY
-    description: From the simplest of interactions to those that use Excel-gradeing formulas, ProtoPie can handle them all. Make mind-blowing of New interactions everyday without ever having to write any new code.
-    image: /images/features-02.png
+    title: Effizenz & Effektivität <br> des Einsatzablaufs 
+    subtitle: UNSERE AUFGABEN
+    description: Weiterhin unterstützen und entlasten die qualifizierten Kräfte den Notarzt bzw. den Rettungsdienst am Einsatzort. Beispielsweise durch vorbereitende Diagnostik, eine strukturierte Patientenübergabe, die Durchführung basis-therapeutischer Maßnahmen oder die Unterstützung  bei Lagerung und Transport der Patienten.
+    image: /images/crew.jpeg
 
 
 #Testimonial
 testimonial:
-  title: OUR TESTIMONIALS
+  title: UNSERE REFERENZEN
   subtitle: Don’t Take Our Word For It
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet.
   list:
     - author: David Cameron
       avatar: /images/user-img/01.jpg
       profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat.
     - author: David Cameron
       avatar: /images/user-img/02.jpg
       profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat.
     - author: David Cameron
       avatar: /images/user-img/03.jpg
       profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat.
     - author: David Cameron
       avatar: /images/user-img/04.png
       profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat.
     - author: David Cameron
       avatar: /images/user-img/05.jpg
       profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat.
     - author: David Cameron
       avatar: /images/user-img/06.jpg
       profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat.
     - author: David Cameron
       avatar: /images/user-img/07.jpg
       profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat.
     - author: David Cameron
       avatar: /images/user-img/08.jpg
       profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-
+      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. 
 ---

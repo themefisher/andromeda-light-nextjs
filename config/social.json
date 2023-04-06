@@ -1,8 +1,8 @@
 {
-  "facebook": "https://facebook.com/",
-  "twitter": "https://twitter.com/",
-  "linkedin": "https://linkedin.com/",
-  "pinterest": "https://pinterest.com/",
+  "facebook": "",
+  "twitter": "",
+  "linkedin": "",
+  "pinterest": "",
   "instagram": "",
   "youtube": "",
   "github": "",
@@ -24,9 +24,9 @@
   "tiktok": "",
   "foursquare": "",
   "rss": "",
-  "email": "",
-  "phone": "",
+  "email": "vorstand@ffrgb.de",
+  "phone": "+4917683089318",
   "address": "",
   "skype": "",
-  "website": ""
+  "website": "https://ffrgb.de"
 }

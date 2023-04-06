@@ -37,7 +37,7 @@ const Contact = ({ data }) => {
                 <input
                   className="form-input w-full"
                   name="name"
-                  placeholder="Full Name"
+                  placeholder="Bitte geben Sie ihren Namen ein."
                   type="text"
                   required
                 />
@@ -47,12 +47,12 @@ const Contact = ({ data }) => {
                   className="mb-2 block font-medium text-dark"
                   htmlFor="email"
                 >
-                  Email
+                  E-Mail
                 </label>
                 <input
                   className="form-input w-full"
                   name="email"
-                  placeholder="Email Address"
+                  placeholder="Bitte geben Sie ihre E-Mail ein."
                   type="email"
                   required
                 />
@@ -62,7 +62,7 @@ const Contact = ({ data }) => {
                   className="mb-2 block font-medium text-dark"
                   htmlFor="subject"
                 >
-                  Subject
+                  Betreff
                 </label>
                 <input
                   className="form-input w-full"
@@ -76,12 +76,12 @@ const Contact = ({ data }) => {
                   className="mb-2 block font-medium text-dark"
                   htmlFor="message"
                 >
-                  Message
+                  Nachricht
                 </label>
                 <textarea className="form-textarea w-full" rows="6" />
               </div>
               <button className="btn btn-primary block w-full">
-                Submit Now
+                Senden
               </button>
             </form>
           </div>

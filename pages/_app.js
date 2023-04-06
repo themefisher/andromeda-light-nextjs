@@ -34,7 +34,6 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        {/* google font css */}
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -45,7 +44,6 @@ const App = ({ Component, pageProps }) => {
             __html: `${fontcss}`,
           }}
         />
-        {/* responsive meta */}
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5"

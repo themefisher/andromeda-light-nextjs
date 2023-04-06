@@ -1,58 +1,59 @@
 {
   "site": {
-    "title": "Andromeda Light Nextjs",
+    "title": "FFRGBeV",
     "base_url": "/",
-    "favicon": "/images/favicon.png",
+    "favicon": "/images/favicon.ico",
     "logo": "/images/logo.svg",
-    "logo_width": "240",
-    "logo_height": "34",
-    "logo_text": "Andromeda"
+    "logo_width": "140",
+    "logo_height": "150",
+    "logo_text": "FFRGBeV"
   },
 
   "settings": {
     "pagination": 6,
     "summary_length": 200,
-    "blog_folder": "posts"
+    "blog_folder": ""
   },
 
   "params": {
     "tag_manager_id": "",
-    "contact_form_action": "#",
-    "footer_content": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
-    "copyright": "Designed & Developed By [Themefisher](https:www.themefisher.com)"
+    "contact_form_action": "https://formspree.io/f/mrgvozgp",
+    "footer_content": "Übermitteln Sie uns gerne eine Nachricht über das Kontaktformular. <br> Wir bedanken uns bereits im Voraus für ihre Unterstützung!"
   },
 
   "contact_info": {
-    "phone": "+887887998",
-    "email": "info@andromeda.io",
-    "location": "2118 Thornridge Cir. Syracuse, Connecticut 35624"
+    "name": "FFRGBeV, c/o Michael Fuchs" ,
+    "address": "Wolfratshauser Str. 15. 82335 Berg",
+    "email": "vorstand@ffrgb.de",
+    "bank": "Raiffeisenbank Isar-Loisachtal eG",
+    "iban": "DE65 7016 9543 0001 0025 38"
   },
 
   "nav_button": {
     "enable": true,
-    "label": "Download Now",
-    "link": "https://themefisher.com/products/andromeda-light-nextjs"
+    "label": "Mitgliedsantrag herunterladen",
+    "link": "/pdf/mitgliedsantrag.pdf"
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
-    "meta_image": "/images/og-image.png",
-    "meta_description": "Andromeda-light Nextjs Blog Template"
+    "meta_author": "Förderverein First Responder in der Gemeinde Berg e. V.",
+    "meta_image": "/images/logo.png",
+    "meta_description": "Offizielle Webpräsenz des Förderverein First Responder in der Gemeinde Berg e. V."
   },
 
   "call_to_action": {
     "enable": true,
-    "title": "Get Andromeda Now",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.",
+    "title": "Unterstütze den First Responder jetzt",
+    "content": "Helfen Sie Helfern und sichern Sie die Rettungsmittel und deren Einsatzbereitschaft in der Gemeinde Berg. <br> Spenden Sie jetzt via PayPal oder überweisen Sie direkt auf unser Konto. Sie können auch gerne Mitglied im Förderverein werden.",
     "button": {
-      "label": "Download The Theme",
-      "link": "https://themefisher.com/products/andromeda-light-nextjs"
+      "label": "Jetzt Spenden via PayPal",
+      "link": "https://www.paypal.com/donate/?hosted_button_id=JEQAM8GA9SDPA"
     }
   },
 
   "disqus": {
-    "enable": true,
-    "shortname": "themefisher-template",
+    "enable": false,
+    "shortname": "",
     "settings": {}
   }
 }
