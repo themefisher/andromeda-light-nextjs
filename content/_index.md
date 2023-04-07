@@ -18,7 +18,7 @@ brands:
 #features
 features:
   sub_title: EIN GEMEINSCHAFTSPROJEKT ZUR
-  title: notfallmedizinische Erstversorgung <br> der Bürger:innen der Gemeinde Berg
+  title: notfallmedizinischen Erstversorgung <br> der Bürger:innen der Gemeinde Berg
   description: Der Förderverein First Responder in der Gemeinde Berg e. V. setzt sich seit seiner Gründung im November 2003 mit all seinen Mitteln und Kräften für die notfallmedizinische Erstversorgung der BürgerInnen der Gemeinde Berg ein. Neben der First Responder Tätigkeit ist uns die Verbesserung der medizinischen Ausrüstung in unserer Gegend ein großes Anliegen. Dafür werden kontinuierlich neue Ausrüstungsgegenstände beschafft. 
   list:
     - icon: 'activity' # see https://feathericons.com/
@@ -29,7 +29,7 @@ features:
       content: Kontinuierliche Fortbildung aller aktiven Fahrer:innen des First Responder durch Übungen und Vorträge von Ärzt:innen.
     - icon: 'message-circle'
       title: Öffentlichkeitsarbeit
-      content: Ansprechpartner für alle Bürger:innen in Belange der Ersten Hilfe und regelmäßige Vorträge sowie Hands-On Übungen.
+      content: Ansprechpartner für alle Bürger:innen in Bezug zur Ersten-Hilfe, Vorträge sowie Hands-On Übungen.
     - icon: 'tool'
       title: Ausrüstung
       content: Fachliche und finanzielle Unterstützung bei medizinischen Beschaffungen der Ausrüstung für das First Responder Projekt.
