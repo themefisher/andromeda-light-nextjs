@@ -27,7 +27,7 @@
     "react-visibility-sensor": "^5.1.1",
     "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",
-    "swiper": "^9.0.0"
+    "swiper": "^9.3.2"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
