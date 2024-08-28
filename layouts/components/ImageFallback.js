@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable jsx-a11y/alt-text */
 import Image from "next/image";
 import { useEffect, useState } from "react";
