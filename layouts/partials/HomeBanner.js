@@ -2,16 +2,16 @@
 
 import Circle from "@layouts/components/Circle";
 import ImageFallback from "@layouts/components/ImageFallback";
+import { gsap } from "@lib/gsap";
 import { markdownify } from "@lib/utils/textConverter";
-import gsap from "gsap";
 import Link from "next/link";
 import { useEffect } from "react";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const HomeBanner = ({ banner, brands }) => {
+const HomeBanner = ({ banner: bannerData, brands }) => {
   useEffect(() => {
-    const ctx = gsap.context(() => {
+    const ctx2 = gsap.context(() => {
       const banner = document.querySelector(".banner");
       const bannerBg = document.querySelector(".banner-bg");
       const bannerContent = document.querySelector(".banner-content");
@@ -86,8 +86,9 @@ const HomeBanner = ({ banner, brands }) => {
         );
     });
 
-    return () => ctx.revert();
-  }, [banner, brands]);
+    return () => ctx2.revert();
+  }, []);
+
   return (
     <section className="section banner pt-0">
       <div className="container-xl">
@@ -154,20 +155,23 @@ const HomeBanner = ({ banner, brands }) => {
               <div className="row relative justify-center pb-10">
                 <div className="banner-content col-10 pb-10 pt-20 text-center">
                   {markdownify(
-                    banner.title,
+                    bannerData.title,
                     "h1",
                     "mb-8 banner-title opacity-0"
                   )}
                   <div className="banner-btn opacity-0">
-                    <Link className="btn btn-primary" href={banner.link.href}>
-                      {banner.link.label}
+                    <Link
+                      className="btn btn-primary"
+                      href={bannerData.link.href}
+                    >
+                      {bannerData.link.label}
                     </Link>
                   </div>
                 </div>
                 <div className="col-10">
                   <ImageFallback
                     className="banner-img opacity-0"
-                    src={banner.image}
+                    src={bannerData.image}
                     width={1170}
                     height={666}
                     priority={true}

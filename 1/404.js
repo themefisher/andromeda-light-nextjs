@@ -1,13 +1,8 @@
 import NotFound from "@layouts/404";
-import Base from "@layouts/Baseof";
 import { getRegularPage } from "@lib/contentParser";
 
 const notFound = ({ data }) => {
-  return (
-    <Base>
-      <NotFound data={data} />
-    </Base>
-  );
+  return <NotFound data={data} />;
 };
 
 // get 404 page data

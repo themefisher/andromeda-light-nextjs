@@ -5,9 +5,9 @@ import theme from "@config/theme.json";
 import TwSizeIndicator from "@layouts/components/TwSizeIndicator";
 import Footer from "@layouts/partials/Footer";
 import Header from "@layouts/partials/Header";
-import gsap from "gsap";
+import { gsap } from "@lib/gsap";
 import { useEffect, useRef } from "react";
-import "styles/style.scss";
+import "../styles/style.scss";
 
 export default function RootLayout({ children }) {
   // import google font css
