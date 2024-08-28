@@ -1,3 +1,4 @@
+"use client";
 import { gsap } from "@lib/gsap";
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
@@ -76,7 +77,7 @@ const Banner = ({ title }) => {
             <li className="mx-2">/</li>
             <li className="capitalize">{title}</li>
           </ul>
-          <div className="bg-theme banner-bg col-12 absolute top-0 left-0 bg-theme-light before:hidden after:hidden">
+          <div className="bg-theme banner-bg col-12 absolute left-0 top-0 bg-theme-light before:hidden after:hidden">
             <ImageFallback
               priority={true}
               fill={true}
@@ -98,17 +99,17 @@ const Banner = ({ title }) => {
               fill={false}
             />
             <Circle
-              className="circle left-[4%] bottom-[27%]"
+              className="circle bottom-[27%] left-[4%]"
               width={73}
               height={73}
             />
             <Circle
-              className="circle left-[39.5%] bottom-[27%]"
+              className="circle bottom-[27%] left-[39.5%]"
               width={20}
               height={20}
             />
             <Circle
-              className="circle left-[22%] bottom-[24%]"
+              className="circle bottom-[24%] left-[22%]"
               width={47}
               height={47}
               fill={false}
@@ -126,13 +127,13 @@ const Banner = ({ title }) => {
               fill={false}
             />
             <Circle
-              className="circle right-[3%] bottom-[17%]"
+              className="circle bottom-[17%] right-[3%]"
               width={73}
               height={73}
               fill={false}
             />
             <Circle
-              className="circle right-[38%] bottom-[50%]"
+              className="circle bottom-[50%] right-[38%]"
               width={20}
               height={20}
               fill={false}
@@ -143,12 +144,12 @@ const Banner = ({ title }) => {
               height={20}
             />
             <Circle
-              className="circle right-[20%] bottom-[29%]"
+              className="circle bottom-[29%] right-[20%]"
               width={65}
               height={65}
             />
             <Circle
-              className="circle right-[35%] bottom-[12%]"
+              className="circle bottom-[12%] right-[35%]"
               width={37}
               height={37}
               fill={false}

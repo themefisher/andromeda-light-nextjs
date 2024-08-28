@@ -1,3 +1,4 @@
+"use client";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { useState } from "react";
 import { LiteYoutubeEmbed } from "../../node_modules/react-lite-yt-embed/dist/index";
@@ -22,7 +23,7 @@ function VideoPopup({ id, thumbnail, width = 700, height = 394 }) {
           />
           <button
             onClick={() => setShowPopup(true)}
-            className="intro-play-btn absolute top-1/2 left-1/2 inline-flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary text-2xl text-body lg:h-[90px] lg:w-[90px]"
+            className="intro-play-btn absolute left-1/2 top-1/2 inline-flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary text-2xl text-body lg:h-[90px] lg:w-[90px]"
           >
             <FeatherIcon icon="play" size={32} />
           </button>

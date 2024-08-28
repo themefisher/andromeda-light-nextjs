@@ -1,3 +1,5 @@
+"use client";
+
 import { markdownify } from "@lib/utils/textConverter";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -27,7 +29,7 @@ const About = ({ data }) => {
         {/* About */}
         <div className="section container">
           <div className="row items-center justify-center">
-            <div className="animate md:col-6 lg:col-5 md:order-2">
+            <div className="animate md:col-6 md:order-2 lg:col-5">
               <div className="about-image relative p-[60px]">
                 <ImageFallback
                   className="animate relative w-full rounded-2xl"
@@ -37,7 +39,7 @@ const About = ({ data }) => {
                   alt=""
                 />
                 <Circle
-                  className="top-4 left-4 z-[-1]"
+                  className="left-4 top-4 z-[-1]"
                   width={85}
                   height={85}
                 />
@@ -45,10 +47,10 @@ const About = ({ data }) => {
                   width={37}
                   height={37}
                   fill={false}
-                  className="top-20 right-10 z-[-1]"
+                  className="right-10 top-20 z-[-1]"
                 />
                 <Circle
-                  className="top-1/2 right-12 -z-[1]"
+                  className="right-12 top-1/2 -z-[1]"
                   width={24}
                   height={24}
                 />
@@ -58,7 +60,7 @@ const About = ({ data }) => {
                   height={85}
                 />
                 <Circle
-                  className="top-1/2 left-12 z-[-1]"
+                  className="left-12 top-1/2 z-[-1]"
                   width={20}
                   height={20}
                 />
@@ -70,7 +72,7 @@ const About = ({ data }) => {
                 />
               </div>
             </div>
-            <div className="animate md:col-6 lg:col-4 md:order-1">
+            <div className="animate md:col-6 md:order-1 lg:col-4">
               <p>{about_us.subtitle}</p>
               {markdownify(about_us.title, "h2", "section-title bar-left mt-4")}
               {markdownify(about_us.content, "p", "mt-10")}
@@ -110,7 +112,7 @@ const About = ({ data }) => {
                   alt=""
                 />
                 <Circle
-                  className="top-4 left-4 z-[-1]"
+                  className="left-4 top-4 z-[-1]"
                   width={85}
                   height={85}
                 />
@@ -118,10 +120,10 @@ const About = ({ data }) => {
                   width={37}
                   height={37}
                   fill={false}
-                  className="top-20 right-10 z-[-1]"
+                  className="right-10 top-20 z-[-1]"
                 />
                 <Circle
-                  className="top-1/2 right-12 -z-[1]"
+                  className="right-12 top-1/2 -z-[1]"
                   width={24}
                   height={24}
                 />
@@ -131,7 +133,7 @@ const About = ({ data }) => {
                   height={85}
                 />
                 <Circle
-                  className="top-1/2 left-12 z-[-1]"
+                  className="left-12 top-1/2 z-[-1]"
                   width={20}
                   height={20}
                 />
@@ -153,7 +155,7 @@ const About = ({ data }) => {
 
         {/* Video */}
         <div className="container-xl relative">
-          <div className="bg-theme absolute top-0 left-0 w-full">
+          <div className="bg-theme absolute left-0 top-0 w-full">
             <Circle
               className="left-[7%] top-[21%]"
               width={32}
@@ -167,25 +169,25 @@ const About = ({ data }) => {
               fill={false}
             />
             <Circle
-              className="left-[4%] bottom-[35%]"
+              className="bottom-[35%] left-[4%]"
               width={20}
               height={20}
               fill={false}
             />
             <Circle
-              className="left-[10%] bottom-[11%]"
+              className="bottom-[11%] left-[10%]"
               width={37}
               height={37}
               fill={false}
             />
             <Circle
-              className="left-[44%] bottom-[48%]"
+              className="bottom-[48%] left-[44%]"
               width={37}
               height={37}
               fill={false}
             />
             <Circle
-              className="left-[35%] bottom-[22%]"
+              className="bottom-[22%] left-[35%]"
               width={20}
               height={20}
               fill={false}
@@ -239,7 +241,7 @@ const About = ({ data }) => {
             >
               {clients.brands.map((brand, index) => (
                 <SwiperSlide
-                  className=" h-20 cursor-pointer py-6 px-6 grayscale  transition hover:grayscale-0 lg:px-10"
+                  className=" h-20 cursor-pointer px-6 py-6 grayscale  transition hover:grayscale-0 lg:px-10"
                   key={"brand-" + index}
                 >
                   <div className="relative h-full">
