@@ -1,4 +1,5 @@
 import config from "@config/config.json";
+import GSAPWrapper from "@layouts/components/GSAPWrapper";
 import PostSingle from "@layouts/PostSingle";
 import { getSinglePage } from "@lib/contentParser";
 import parseMDX from "@lib/utils/mdxParser";
@@ -15,12 +16,14 @@ const Article = async ({ params }) => {
   const { frontmatter, content } = post[0];
 
   return (
-    <PostSingle
-      frontmatter={frontmatter}
-      content={content}
-      mdxContent={mdxContent}
-      recentPosts={recentPosts}
-    />
+    <GSAPWrapper>
+      <PostSingle
+        frontmatter={frontmatter}
+        content={content}
+        mdxContent={mdxContent}
+        recentPosts={recentPosts}
+      />
+    </GSAPWrapper>
   );
 };
 

@@ -1,4 +1,5 @@
 import Cta from "@layouts/components/Cta";
+import GSAPWrapper from "@layouts/components/GSAPWrapper";
 import Features from "@layouts/partials/Features";
 import HomeBanner from "@layouts/partials/HomeBanner";
 import SeoMeta from "@layouts/partials/SeoMeta";
@@ -13,7 +14,7 @@ const Home = async () => {
   const { banner, brands, features, intro, speciality, testimonial } =
     frontmatter;
   return (
-    <>
+    <GSAPWrapper>
       <SeoMeta title="Home" />
       <HomeBanner banner={banner} brands={brands} />
       <Features features={features} />
@@ -21,7 +22,7 @@ const Home = async () => {
       <SpecialFeatures speciality={speciality} />
       <Testimonial testimonial={testimonial} />
       <Cta />
-    </>
+    </GSAPWrapper>
   );
 };
 

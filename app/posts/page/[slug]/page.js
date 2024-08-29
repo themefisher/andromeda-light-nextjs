@@ -2,6 +2,7 @@ import Pagination from "@components/Pagination";
 import config from "@config/config.json";
 import Banner from "@layouts/components/Banner";
 import Cta from "@layouts/components/Cta";
+import GSAPWrapper from "@layouts/components/GSAPWrapper";
 import SeoMeta from "@layouts/partials/SeoMeta";
 import { getListPage, getSinglePage } from "@lib/contentParser";
 import Post from "@partials/Post";
@@ -23,7 +24,7 @@ const BlogPagination = async ({ params }) => {
   const { title } = frontmatter;
 
   return (
-    <>
+    <GSAPWrapper>
       <SeoMeta title={title} />
       <section className="section pt-0">
         <Banner title={title} />
@@ -44,7 +45,7 @@ const BlogPagination = async ({ params }) => {
       </section>
       {/* CTA */}
       <Cta />
-    </>
+    </GSAPWrapper>
   );
 };
 

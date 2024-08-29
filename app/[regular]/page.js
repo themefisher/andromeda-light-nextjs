@@ -1,5 +1,6 @@
 import NotFound from "@layouts/404";
 import About from "@layouts/About";
+import GSAPWrapper from "@layouts/components/GSAPWrapper";
 import Contact from "@layouts/Contact";
 import Default from "@layouts/Default";
 import SeoMeta from "@layouts/partials/SeoMeta";
@@ -14,7 +15,7 @@ const RegularPages = async ({ params }) => {
   const { content } = pageData;
 
   return (
-    <>
+    <GSAPWrapper>
       <SeoMeta
         title={title}
         description={description ? description : content.slice(0, 120)}
@@ -33,7 +34,7 @@ const RegularPages = async ({ params }) => {
       ) : (
         <Default data={pageData} />
       )}
-    </>
+    </GSAPWrapper>
   );
 };
 export default RegularPages;
