@@ -51,7 +51,6 @@ const BlogPagination = async ({ params }) => {
 
 export default BlogPagination;
 
-// generate static params for blog pagination
 export async function generateStaticParams() {
   const getAllSlug = await getSinglePage(`content/${blog_folder}`);
   const allSlug = getAllSlug.map((item) => item.slug);

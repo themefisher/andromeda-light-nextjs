@@ -2,7 +2,6 @@ import config from "@config/config.json";
 import GSAPWrapper from "@layouts/components/GSAPWrapper";
 import PostSingle from "@layouts/PostSingle";
 import { getSinglePage } from "@lib/contentParser";
-import parseMDX from "@lib/utils/mdxParser";
 import { sortByDate } from "@lib/utils/sortFunctions";
 const { blog_folder } = config.settings;
 
@@ -11,7 +10,6 @@ const Article = async ({ params }) => {
   const { single } = params;
   const posts = await getSinglePage(`content/${blog_folder}`);
   const post = posts.filter((p) => p.slug == single);
-  const mdxContent = await parseMDX(post[0].content);
   const recentPosts = sortByDate(posts).filter((post) => post.slug !== single);
   const { frontmatter, content } = post[0];
 
@@ -20,7 +18,6 @@ const Article = async ({ params }) => {
       <PostSingle
         frontmatter={frontmatter}
         content={content}
-        mdxContent={mdxContent}
         recentPosts={recentPosts}
       />
     </GSAPWrapper>

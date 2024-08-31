@@ -1,28 +1,18 @@
-"use client";
-
 import config from "@config/config.json";
 import dateFormat from "@lib/utils/dateFormat";
 import readingTime from "@lib/utils/readingTime";
 import { markdownify } from "@lib/utils/textConverter";
-import shortcodes from "@shortcodes/all";
-import { DiscussionEmbed } from "disqus-react";
-import dynamic from "next/dynamic";
+import MDXContent from "app/helper/MDXContent";
 import Image from "next/image";
 import Cta from "./components/Cta";
 import ImageFallback from "./components/ImageFallback";
+import DisqussEmbed from "./partials/DisqussEmbed";
 import Post from "./partials/Post";
 import SeoMeta from "./partials/SeoMeta";
-const MDXRemote = dynamic(
-  () => import("next-mdx-remote").then((elem) => elem.MDXRemote),
-  {
-    ssr: false,
-  }
-);
 
-const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
+const PostSingle = ({ frontmatter, content, recentPosts }) => {
   let { description, title, date, image, author } = frontmatter;
   description = description ? description : content.slice(0, 120);
-
   const { disqus } = config;
 
   return (
@@ -63,16 +53,13 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
                   </div>
                 </div>
                 <div className="content mb-16 mt-16 text-left">
-                  <MDXRemote {...mdxContent} components={shortcodes} />
+                  <MDXContent content={content} />
                 </div>
               </div>
               {disqus.enable && (
                 <div className="fade row justify-center ">
                   <div className="lg:col-8">
-                    <DiscussionEmbed
-                      shortname={disqus.shortname}
-                      config={disqus.settings}
-                    />
+                    <DisqussEmbed />
                   </div>
                 </div>
               )}

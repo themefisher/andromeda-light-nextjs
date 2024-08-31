@@ -1,18 +1,8 @@
-"use client";
-
-import shortcodes from "@shortcodes/all";
-import dynamic from "next/dynamic";
+import MDXContent from "app/helper/MDXContent";
 import Banner from "./components/Banner";
 
-const MDXRemote = dynamic(
-  () => import("next-mdx-remote").then((mod) => mod.MDXRemote),
-  {
-    ssr: false,
-  }
-);
-
 const Default = ({ data }) => {
-  const { frontmatter, mdxContent } = data;
+  const { frontmatter, content } = data;
   const { title } = frontmatter;
 
   return (
@@ -20,7 +10,7 @@ const Default = ({ data }) => {
       <Banner title={title} />
       <div className="container mt-10">
         <div className="content">
-          <MDXRemote {...mdxContent} components={shortcodes} />
+          <MDXContent content={content} />
         </div>
       </div>
     </section>
