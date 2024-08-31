@@ -11,7 +11,7 @@ function VideoPopup({ id, thumbnail, width = 700, height = 394 }) {
   return (
     <div className="animate relative  flex overflow-hidden rounded-2xl">
       {showPopup ? (
-        <div>
+        <div className="aspect-video w-full">
           <LiteYouTubeEmbed id={id} defaultPlay={true} />
         </div>
       ) : (
