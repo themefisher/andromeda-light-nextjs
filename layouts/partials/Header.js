@@ -2,7 +2,7 @@ import Logo from "@components/Logo";
 import config from "@config/config.json";
 import menu from "@config/menu.json";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 import { CgClose } from "react-icons/cg";
 
@@ -16,7 +16,8 @@ const Header = () => {
   const headerRef = useRef(null);
   const [direction, setDirection] = useState(null);
 
-  const { asPath } = useRouter();
+  const pathname = usePathname();
+  const asPath = pathname;
 
   //sticky header
   useEffect(() => {
@@ -55,7 +56,7 @@ const Header = () => {
 
           <ul
             id="nav-menu"
-            className={`navbar-nav order-2 w-full justify-center md:w-auto md:space-x-2 lg:order-1 lg:flex ${
+            className={`navbar-nav order-2 w-full justify-center lg:order-1 md:w-auto md:space-x-2 lg:flex ${
               !showMenu && "hidden"
             }`}
           >

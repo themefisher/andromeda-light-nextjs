@@ -1,24 +1,23 @@
 import config from "@config/config.json";
-import Base from "@layouts/Baseof";
 import dateFormat from "@lib/utils/dateFormat";
 import readingTime from "@lib/utils/readingTime";
 import { markdownify } from "@lib/utils/textConverter";
-import shortcodes from "@shortcodes/all";
-import { DiscussionEmbed } from "disqus-react";
-import { MDXRemote } from "next-mdx-remote";
+import MDXContent from "app/helper/MDXContent";
 import Image from "next/image";
 import Cta from "./components/Cta";
 import ImageFallback from "./components/ImageFallback";
+import DisqussEmbed from "./partials/DisqussEmbed";
 import Post from "./partials/Post";
+import SeoMeta from "./partials/SeoMeta";
 
-const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
+const PostSingle = ({ frontmatter, content, recentPosts }) => {
   let { description, title, date, image, author } = frontmatter;
   description = description ? description : content.slice(0, 120);
-
   const { disqus } = config;
 
   return (
-    <Base title={title} description={description}>
+    <>
+      <SeoMeta title={title} description={description} image={image} />
       <section className="section pt-0">
         <div className="container">
           <article>
@@ -31,7 +30,7 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
                     width="1120"
                     alt={title}
                     priority={true}
-                    className="fade w-full rounded-lg opacity-0"
+                    className="fade w-full rounded-lg "
                   />
                 )}
               </div>
@@ -53,17 +52,14 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
                     </p>
                   </div>
                 </div>
-                <div className="content mt-16 mb-16 text-left">
-                  <MDXRemote {...mdxContent} components={shortcodes} />
+                <div className="content mb-16 mt-16 text-left">
+                  <MDXContent content={content} />
                 </div>
               </div>
               {disqus.enable && (
-                <div className="fade row justify-center opacity-0">
+                <div className="fade row justify-center ">
                   <div className="lg:col-8">
-                    <DiscussionEmbed
-                      shortname={disqus.shortname}
-                      config={disqus.settings}
-                    />
+                    <DisqussEmbed />
                   </div>
                 </div>
               )}
@@ -84,7 +80,7 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
       </section>
 
       <Cta />
-    </Base>
+    </>
   );
 };
 

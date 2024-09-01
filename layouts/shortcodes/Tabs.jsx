@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 
 function Tabs({ children }) {
@@ -41,7 +43,7 @@ function Tabs({ children }) {
         ))}
       </ul>
       <ul
-        className="mt-1 mb-0 list-none rounded-xl bg-theme-light p-6"
+        className="mb-0 mt-1 list-none rounded-xl bg-theme-light p-6"
         ref={tabItemsRef}
       >
         {children}
