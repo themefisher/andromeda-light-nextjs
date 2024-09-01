@@ -4,7 +4,7 @@ banner:
   image: /images/banner-app.png
   link:
     label: Get Premium Version
-    href: "#"
+    href: "https://themefisher.com/products/andromeda-nextjs"
 
 ##brands
 brands:
